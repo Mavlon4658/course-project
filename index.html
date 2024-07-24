@@ -14,100 +14,537 @@
     
     <div class="wrapper">
 
+        <!-- Filter -->
+        <div class="modal">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <button type="button" class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h3>Выберите параметры:</h3>
+                <ul>
+                    <li>
+                        <label for="modalCheckbox1">
+                            <input type="radio" name="settings" checked id="modalCheckbox1">
+                            <span class="icon"></span>
+                            <span>только непройденные курсы</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="modalCheckbox2">
+                            <input type="radio" name="settings" id="modalCheckbox2">
+                            <span class="icon"></span>
+                            <span>только пройденные курсы</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="modalCheckbox3">
+                            <input type="radio" name="settings" id="modalCheckbox3">
+                            <span class="icon"></span>
+                            <span>обязательные курсы</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="modalCheckbox4">
+                            <input type="radio" name="settings" id="modalCheckbox4">
+                            <span class="icon"></span>
+                            <span>избранные курсы</span>
+                        </label>
+                    </li>
+                </ul>
+                <h4>По дате добавления</h4>
+                <div class="select_date">
+                    <label for="date-1" class="select_date__item">
+                        <!-- <img src="./images/calendar.svg" alt=""> -->
+                        <input type="date" placeholder="По дате добавления" value="2023-03-21" id="date-1">
+                    </label>
+                    <span>-</span>
+                    <label for="date-2" class="select_date__item">
+                        <!-- <img src="./images/calendar.svg" alt=""> -->
+                        <input type="date" placeholder="По дате добавления" value="2023-03-21" id="date-2">
+                    </label>
+                </div>
+                <button type="submit" class="btn_green">ПРИМЕНИТЬ</button>
+            </form>
+        </div>
+        <!-- Filter end -->
+
+        <!-- Home -->
+        <section class="home">
+            <div class="main_container">
+                <h2 class="home__title">
+                    ДОБРО ПОЖАЛОВАТЬ <br>
+                    <span>НА ПОРТАЛ ОБУЧЕНИЯ!</span>
+                </h2>
+                <div class="home__head">
+                    <p>Доступные курсы:</p>
+                    <button>
+                        <img src="./images/filter-icon.svg" alt="">
+                    </button>
+                </div>
+                <ul class="home__card">
+
+                    <li class="home__card_item">
+                        <span class="alert-new">NEW</span>
+                        <img src="./images/home-card-1.png" alt="" class="main_img">
+                        <div class="home__card_item__head">
+                            <span>12.04.2024</span>
+                            <h3>Правильная подача блюд</h3>
+                            <p>Данный курс познакомит вас с различными вариантами подачи блюд, правилам и другим важным моментам</p>
+                        </div>
+                        <div class="home__card_item__bottom">
+                            <div>
+                                <p><b>Прочитано:</b> <span>0/5</span> уроков</p>
+                                <p><b>Пройдено:</b> <span>0/2</span> теста (0/45 баллов)</p>
+                            </div>
+                            <img src="./images/chevron-right.svg" alt="">
+                        </div>
+                    </li>
+
+                    <li class="home__card_item">
+                        <img src="./images/home-card-2.png" alt="" class="main_img">
+                        <div class="home__card_item__head">
+                            <span>06.04.2024</span>
+                            <h3>Чаевые</h3>
+                            <p>В данный курсе вы узнаете о правилах и способе получения чаевых</p>
+                        </div>
+                        <div class="home__card_item__bottom">
+                            <div>
+                                <p><b>Прочитано:</b> <span>3/3</span> уроков</p>
+                                <p><b>Пройдено:</b> <span>1/2</span> теста (46/90 баллов)</p>
+                            </div>
+                            <img src="./images/chevron-right.svg" alt="">
+                        </div>
+                    </li>
+
+                    <li class="home__card_item success">
+                        <span class="alert-success">
+                            <img src="./images/success.svg" alt="">
+                        </span>
+                        <img src="./images/home-card-3.png" alt="" class="main_img">
+                        <div class="home__card_item__head">
+                            <span>21.03.2024</span>
+                            <h3>Дезинфекция помещения</h3>
+                            Узнайте о правилах уборки и дезинфекции помещений</p>
+                        </div>
+                        <div class="home__card_item__bottom">
+                            <div>
+                                <p><b>Прочитано:</b> <span>1/1</span> уроков</p>
+                                <p><b>Пройдено:</b> <span>1/1</span> теста (97/100 баллов)</p>
+                            </div>
+                            <img src="./images/chevron-right.svg" alt="">
+                        </div>
+                    </li>
+
+                    <li class="home__card_item">
+                        <img src="./images/home-card-4.png" alt="" class="main_img">
+                        <div class="home__card_item__head">
+                            <span>12.04.2024</span>
+                            <h3>Правильная подача блюд</h3>
+                            <p>Данный курс познакомит вас с различными вариантами подачи блюд, правилам и другим важным моментам</p>
+                        </div>
+                        <div class="home__card_item__bottom">
+                            <div>
+                                <p><b>Прочитано:</b> <span>0/5</span> уроков</p>
+                                <p><b>Пройдено:</b> <span>0/2</span> теста (0/42 баллов)</p>
+                            </div>
+                            <img src="./images/chevron-right.svg" alt="">
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <!-- Home end -->
+
         <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__link">
+                    <img src="./images/chevron-left.svg" alt="">
+                    <span>вернуться назад</span>
+                </div>
+            </div>
+        </header>
         <!-- Header end -->
 
-        <main>
+        <!-- Notification -->
+        <section class="notification">
+            <div class="main_container">
+                <h2 class="notification__title">Уведомления <span>(3)</span></h2>
+                <ul class="notification__card_wrap">
+                    <li class="notification__card">
+                        <span class="alert-red"></span>
+                        <h3>
+                            Вам назначили прохождение нового теста
+                            <span>13.06.2024 (16:30)</span>
+                        </h3>
+                        <p>Итоговый тест по курсу “Как встречать гостей в ресторане”</p>
+                        <div class="notification__card_link">Перейти к тесту</div>
+                    </li>
+                    <li class="notification__card">
+                        <span class="alert-red"></span>
+                        <h3>
+                            Вам назначили прохождение нового теста
+                            <span>13.06.2024 (16:30)</span>
+                        </h3>
+                        <p>Итоговый тест по курсу “Как встречать гостей в ресторане”</p>
+                        <div class="notification__card_link">Перейти к тесту</div>
+                    </li>
+                    <li class="notification__card">
+                        <span class="alert-red"></span>
+                        <h3>
+                            Вам назначили прохождение нового теста
+                            <span>13.06.2024 (16:30)</span>
+                        </h3>
+                        <p>Итоговый тест по курсу “Как встречать гостей в ресторане”</p>
+                        <div class="notification__card_link">Перейти к тесту</div>
+                    </li>
+                    <li class="notification__card">
+                        <h3>
+                            Вам назначили прохождение нового теста
+                            <span>13.06.2024 (16:30)</span>
+                        </h3>
+                        <p>Итоговый тест по курсу “Как встречать гостей в ресторане”</p>
+                        <div class="notification__card_link">Перейти к тесту</div>
+                    </li>
+                    <li class="notification__card">
+                        <h3>
+                            Вам назначили прохождение нового теста
+                            <span>13.06.2024 (16:30)</span>
+                        </h3>
+                        <p>Итоговый тест по курсу “Как встречать гостей в ресторане”</p>
+                        <div class="notification__card_link">Перейти к тесту</div>
+                    </li>
+                    <li class="notification__card">
+                        <h3>
+                            Вам назначили прохождение нового теста
+                            <span>13.06.2024 (16:30)</span>
+                        </h3>
+                        <p>Итоговый тест по курсу “Как встречать гостей в ресторане”</p>
+                        <div class="notification__card_link">Перейти к тесту</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Notification end -->
 
-            <!-- Home -->
-            <section class="home">
-                <div class="main_container">
-                    <h2 class="home__title">
-                        ДОБРО ПОЖАЛОВАТЬ <br>
-                        <span>НА ПОРТАЛ ОБУЧЕНИЯ!</span>
-                    </h2>
-                    <div class="home__head">
-                        <p>Доступные курсы:</p>
-                        <button>
-                            <img src="./images/filter-icon.svg" alt="">
-                        </button>
-                    </div>
-                    <ul class="home__card">
-
-                        <li class="home__card_item">
-                            <span class="alert-new">NEW</span>
-                            <img src="./images/home-card-1.png" alt="" class="main_img">
-                            <div class="home__card_item__head">
-                                <span>12.04.2024</span>
-                                <h3>Правильная подача блюд</h3>
-                                <p>Данный курс познакомит вас с различными вариантами подачи блюд, правилам и другим важным моментам</p>
-                            </div>
-                            <div class="home__card_item__bottom">
-                                <div>
-                                    <p><b>Прочитано:</b> <span>0/5</span> уроков</p>
-                                    <p><b>Пройдено:</b> <span>0/2</span> теста (0/45 баллов)</p>
-                                </div>
-                                <img src="./images/chevron-right.svg" alt="">
-                            </div>
-                        </li>
-
-                        <li class="home__card_item">
-                            <img src="./images/home-card-2.png" alt="" class="main_img">
-                            <div class="home__card_item__head">
-                                <span>06.04.2024</span>
-                                <h3>Чаевые</h3>
-                                <p>В данный курсе вы узнаете о правилах и способе получения чаевых</p>
-                            </div>
-                            <div class="home__card_item__bottom">
-                                <div>
-                                    <p><b>Прочитано:</b> <span>3/3</span> уроков</p>
-                                    <p><b>Пройдено:</b> <span>1/2</span> теста (46/90 баллов)</p>
-                                </div>
-                                <img src="./images/chevron-right.svg" alt="">
-                            </div>
-                        </li>
-
-                        <li class="home__card_item success">
-                            <span class="alert-success">
-                                <img src="./images/success.svg" alt="">
-                            </span>
-                            <img src="./images/home-card-3.png" alt="" class="main_img">
-                            <div class="home__card_item__head">
-                                <span>21.03.2024</span>
-                                <h3>Дезинфекция помещения</h3>
-                                Узнайте о правилах уборки и дезинфекции помещений</p>
-                            </div>
-                            <div class="home__card_item__bottom">
-                                <div>
-                                    <p><b>Прочитано:</b> <span>1/1</span> уроков</p>
-                                    <p><b>Пройдено:</b> <span>1/1</span> теста (97/100 баллов)</p>
-                                </div>
-                                <img src="./images/chevron-right.svg" alt="">
-                            </div>
-                        </li>
-
-                        <li class="home__card_item">
-                            <img src="./images/home-card-4.png" alt="" class="main_img">
-                            <div class="home__card_item__head">
-                                <span>12.04.2024</span>
-                                <h3>Правильная подача блюд</h3>
-                                <p>Данный курс познакомит вас с различными вариантами подачи блюд, правилам и другим важным моментам</p>
-                            </div>
-                            <div class="home__card_item__bottom">
-                                <div>
-                                    <p><b>Прочитано:</b> <span>0/5</span> уроков</p>
-                                    <p><b>Пройдено:</b> <span>0/2</span> теста (0/42 баллов)</p>
-                                </div>
-                                <img src="./images/chevron-right.svg" alt="">
-                            </div>
-                        </li>
-
-                    </ul>
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__link">
+                    <img src="./images/chevron-left.svg" alt="">
+                    <span>вернуться назад</span>
                 </div>
-            </section>
-            <!-- Home end -->
+                <div class="header__date">Создан: 12.04.2024</div>
+            </div>
+        </header>
+        <!-- Header end -->
 
-        </main>
+        <!-- Course -->
+        <section class="course">
+            <div class="main_container">
+                <h2 class="course__title">Правильная подача блюд</h2>
+                <p class="course__description">Данный курс познакомит вас с различными вариантами подачи блюд, правилам и другим важным моментам. И еще немного немного немного и немного текста...</p>
+                <ul class="course__card_wrap">
+                    <li class="course__card">
+                        <div class="course__card_head">
+                            <h3 class="course__card_head__title">УРОК <span>#1</span></h3>
+                            <div class="course__card_head__link">Прочитано</div>
+                        </div>
+                        <div class="course__card_foot">
+                            <p class="course__card_foot__description">Варианты подачи блюд и напитков</p>
+                            <div class="course__card_foot__result">Результат: <span>92</span></div>
+                        </div>
+                    </li>
+                    <li class="course__card">
+                        <div class="course__card_head">
+                            <h3 class="course__card_head__title">УРОК <span>#2</span></h3>
+                            <div class="course__card_head__link">Прочитано</div>
+                        </div>
+                        <div class="course__card_foot">
+                            <p class="course__card_foot__description">Варианты подачи блюд и напитков</p>
+                            <div class="course__card_foot__result">Результат: <span>92</span></div>
+                        </div>
+                    </li>
+                    <li class="course__card">
+                        <div class="course__card_head">
+                            <h3 class="course__card_head__title">УРОК <span>#3</span></h3>
+                            <div class="course__card_head__link">Пройден</div>
+                        </div>
+                        <div class="course__card_foot">
+                            <p class="course__card_foot__description">Варианты подачи блюд и напитков</p>
+                            <div class="course__card_foot__result">Результат: <span>92</span></div>
+                        </div>
+                    </li>
+                    <li class="course__card">
+                        <div class="course__card_head">
+                            <h3 class="course__card_head__title">УРОК <span>#4</span></h3>
+                            <div class="course__card_head__link disabled">Не прочитано</div>
+                        </div>
+                        <div class="course__card_foot">
+                            <p class="course__card_foot__description">Варианты подачи блюд и напитков</p>
+                            <div class="course__card_foot__result">Результат: <span>92</span></div>
+                        </div>
+                    </li>
+                    <li class="course__card">
+                        <div class="course__card_head">
+                            <h3 class="course__card_head__title">УРОК <span>#5</span></h3>
+                            <div class="course__card_head__link disabled">Не прочитано</div>
+                        </div>
+                        <div class="course__card_foot">
+                            <p class="course__card_foot__description">Варианты подачи блюд и напитков</p>
+                            <div class="course__card_foot__result">Результат: <span>92</span></div>
+                        </div>
+                    </li>
+                    <li class="course__card">
+                        <div class="course__card_head">
+                            <h3 class="course__card_head__title">УРОК <span>#6</span></h3>
+                            <div class="course__card_head__link disabled">Не прочитано</div>
+                        </div>
+                        <div class="course__card_foot">
+                            <p class="course__card_foot__description">Варианты подачи блюд и напитков</p>
+                            <div class="course__card_foot__result">Результат: <span>92</span></div>
+                        </div>
+                    </li>
+                    <li class="course__card">
+                        <div class="course__card_head">
+                            <h3 class="course__card_head__title">УРОК <span>#7</span></h3>
+                            <div class="course__card_head__link disabled">Не прочитано</div>
+                        </div>
+                        <div class="course__card_foot">
+                            <p class="course__card_foot__description">Варианты подачи блюд и напитков</p>
+                            <div class="course__card_foot__result">Результат: <span>92</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Course end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__link">
+                    <img src="./images/chevron-left.svg" alt="">
+                    <span>вернуться назад</span>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Statistic -->
+        <section class="statistic">
+            <div class="main_container">
+                <h2 class="statistic__title">Статистика</h2>
+                <p class="statistic__description">Выберите направление: <span>*</span></p>
+                <select class="statistic__select" name="" id="">
+                    <option value="" selected>По сети “Круассан”</option>
+                    <option value="">По сети “Круассан 2”</option>
+                    <option value="">По сети “Круассан 3”</option>
+                    <option value="">По сети “Круассан 4”</option>
+                    <option value="">По сети “Круассан 5”</option>
+                    <option value="">По сети “Круассан 6”</option>
+                </select>
+                <p class="result_text">Результат:</p>
+                <ul class="user_list">
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>1</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>94</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>2</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>93</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>3</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>90</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>4</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>88</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>5</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>87</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>6</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>84</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>7</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>77</p>
+                    </li>
+                    <li class="user_list__item active">
+                        <div class="user_list__item_name">
+                            <span>14</span>
+                            <h3>ВЫ</h3>
+                        </div>
+                        <p>73</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Statistic end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__link">
+                    <img src="./images/chevron-left.svg" alt="">
+                    <span>вернуться назад</span>
+                </div>
+                <div class="header__date">Тест “Подача блюд”</div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Test -->
+        <div class="test">
+            <iframe src="" frameborder="0" class="test__iframe"></iframe>
+            <div class="main_container">
+                <div class="test__content">
+                    <button class="btn_orange">ОТМЕНА И ВОЗВРАТ</button>
+                    <button class="btn_gray">ПЕРЕЗАПУСК</button>
+                    <div class="time">
+                        <img src="./images/oclock.svg" alt="">
+                        <span>13:42</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Test end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__link">
+                    <img src="./images/chevron-left.svg" alt="">
+                    <span>вернуться назад</span>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Result block -->
+        <section class="result-block">
+            <div class="main_container">
+                <div class="result-block__head">
+                    <img src="./images/success-icon.svg" alt="">
+                    <h2>Поздравляем!</h2>
+                    <h4>Вы успешно прошли тест</h4>
+                    <p>“Название теста”</p>
+                    <h3>Результат - <span>73</span> балла</h3>
+                </div>
+                <ul class="user_list">
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>1</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>94</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>2</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>93</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>3</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>90</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>4</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>88</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>5</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>87</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>6</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>84</p>
+                    </li>
+                    <li class="user_list__item">
+                        <div class="user_list__item_name">
+                            <span>7</span>
+                            <h3>Иванов Иван</h3>
+                        </div>
+                        <p>77</p>
+                    </li>
+                    <li class="user_list__item active">
+                        <div class="user_list__item_name">
+                            <span>14</span>
+                            <h3>ВЫ</h3>
+                        </div>
+                        <p>73</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Result block end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__link">
+                    <img src="./images/chevron-left.svg" alt="">
+                    <span>вернуться назад</span>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Result block -->
+        <section class="result-block">
+            <div class="main_container">
+                <div class="result-block__head">
+                    <img src="./images/fail-icon.svg" alt="">
+                    <h2>Увы...</h2>
+                    <h4>Вы не прошли тест</h4>
+                    <p>“Название теста”</p>
+                    <h3>Результат - <span class="text-orange">42</span> балла</h3>
+                    <button class="btn_green">ПОПРОБОВАТЬ СНОВА</button>
+                </div>
+            </div>
+        </section>
+        <!-- Result block end -->
 
         <!-- Nav -->
         <nav class="nav">
